@@ -19,5 +19,8 @@
   "homepage": "https://github.com/ariskoumis/personal_website#readme",
   "dependencies": {
     "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "grunt-contrib-watch": "^1.0.0"
   }
 }
