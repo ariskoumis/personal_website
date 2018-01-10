@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ariskoumis/personal_website/issues"
   },
-  "homepage": "https://github.com/ariskoumis/personal_website#readme"
+  "homepage": "https://github.com/ariskoumis/personal_website#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
