@@ -4,7 +4,8 @@
   "description": "Nothing here yet.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,8 @@
     "express": "^4.16.2"
   },
   "devDependencies": {
-    "grunt-contrib-watch": "^1.0.0"
+    "file-loader": "^1.1.6",
+    "grunt-contrib-watch": "^1.0.0",
+    "webpack": "^3.10.0"
   }
 }

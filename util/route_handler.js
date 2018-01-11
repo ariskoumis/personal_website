@@ -1,8 +1,9 @@
 var settings = require('./settings')
+var path = require('path')
 
 //Express.js configurations
 var options = {
-	root: settings.root
+	root: settings.dist_dir
 }
 
 //A map of all endpoint handlers
@@ -16,18 +17,6 @@ var handle_map = {}
 	@returns	n/a
 	@details 	This function handles all requests for the server root ("/"). Used on a GET request
 */
-handle_map.rootHandler = function (request, response) {			// GET request on root dir (login page-> index.html)
-	response.set("Content-Type", "text/html");
-	response.sendFile("index.html", options, function (error) {
-		if (error) {
-			logger.log(error);
-			response.status(500).end();
-		} else {
-			logger.log(`Sent index.html to ${settings.port}`);
-			response.end();
-		}
-	});
-};
 handle_map.rootHandler = function(request, response) {
 	response.set("Content-Type", "text/html")
 	response.sendFile("index.html", options, function(error) {
