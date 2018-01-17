@@ -2,10 +2,11 @@
   "name": "personal_website",
   "version": "1.0.0",
   "description": "Nothing here yet.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --config webpack.config.js"
+    "start": "webpack-dev-server",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -19,11 +20,11 @@
   },
   "homepage": "https://github.com/ariskoumis/personal_website#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "three": "^0.89.0"
   },
   "devDependencies": {
     "file-loader": "^1.1.6",
-    "grunt-contrib-watch": "^1.0.0",
-    "webpack": "^3.10.0"
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.0"
   }
 }
