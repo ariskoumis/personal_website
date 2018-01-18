@@ -1,4 +1,8 @@
 require("file-loader?name=index.html!./../index.html");
+
+import React from 'react'
+import ReactDOM from 'react-dom'
+// import Welcome from './welcome.jsx'
 var THREE = require('three')
 
 var scene = new THREE.Scene()
@@ -23,3 +27,6 @@ function animate() {
 }
 
 animate()
+
+// Test to verify if babel and react are functioning as desired.
+// ReactDOM.render(<Welcome/>, document.getElementById('app'));
