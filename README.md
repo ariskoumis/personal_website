@@ -1,6 +1,6 @@
 # Personal Website
 
-This is the repository for my website, which is still a work in progress.
+This is the repository for my website which is still a work in progress.
 
 ## Install dependencies
 ```
